@@ -23,9 +23,8 @@ function NavBar() {
   return (
   <div>
     <nav>
-    <a href="#home" key={links2}>{Home}</a>;
-    <a href="#about" key={links2}>{About}</a>;
-    <a href="#projects" key={links2}>{ProjectList}</a>;
+    <a >{links2}</a>;
+    
     </nav>
     </div>
     );
