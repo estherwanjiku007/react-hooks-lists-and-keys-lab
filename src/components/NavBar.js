@@ -1,7 +1,5 @@
 import React from "react";
-import Home from "./Home"
-import About from "./About"
-import ProjectList from "./ProjectList"
+
 function NavBar() {
   const links = ["home", "about", "projects"];
      // const MyKeys2=MyKeys.map(())
@@ -10,21 +8,20 @@ function NavBar() {
      // return i
     //}
    // links2=index[i]
-  const links2=links.map((link)=>{
-    return (
-      <div>
-      <a href="#{link}" key={link}>{link}</a>
-      </div>
-    )
-  })
+
 
    
    //)
   return (
   <div>
     <nav>
-    <a >{links2}</a>;
-    
+    {links.map((link,index)=>{
+     return(
+      <a key={index} href={link}>      
+        {link}
+      </a>
+    )
+  })}
     </nav>
     </div>
     );

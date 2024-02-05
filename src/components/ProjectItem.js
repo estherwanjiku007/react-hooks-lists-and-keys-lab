@@ -1,19 +1,19 @@
 import React from "react";
-import projects from "../data/user"
+/*import projects from "../data/user"
 import About  from "./About";
-import ProjectList from "./ProjectList";
+import ProjectList from "./ProjectList";*/
 
-function ProjectItem({ technologies, name,about}) {
+function ProjectItem({ technologies}) {
  // const name=projects.name
+ console.log(technologies)
   return (
-    <div className="project-item">
-      <h3>{name}</h3>
-      <p>{about}</p>
+   
+      
       <div className="technologies">
-        <span >
+        <span key={technologies}>
           {technologies}</span>   
       </div>
-    </div>
+    
   );
 }
 
