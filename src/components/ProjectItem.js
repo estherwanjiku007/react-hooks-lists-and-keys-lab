@@ -6,9 +6,7 @@ import ProjectList from "./ProjectList";*/
 function ProjectItem({ technologies}) {
  // const name=projects.name
  console.log(technologies)
-  return (
-   
-      
+  return (      
       <div className="technologies">
         <span key={technologies}>
           {technologies}</span>   
