@@ -8,8 +8,11 @@ function ProjectItem({ technologies}) {
  console.log(technologies)
   return (      
       <div className="technologies">
-        <span key={technologies}>
-          {technologies}</span>   
+        {technologies.map((technology,index)=>{         
+          <div>
+         <span key={index}>{technology}</span>
+         </div>
+        })}
       </div>
     
   );

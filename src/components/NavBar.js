@@ -5,9 +5,9 @@ function NavBar() {
   return (
     <div>
       <nav>
-      {links.map((link,index)=>{
+      {links.map((link)=>{
        return(
-        <a key={index} href={link}>      
+        <a key={link} href={`#${link}`}>      
           {link}
         </a>
       )

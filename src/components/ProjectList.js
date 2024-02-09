@@ -11,9 +11,14 @@ function ProjectList({ projects }) {
   console.log(projects);
   return (
     <div id="projects">
-      <h2>{projects.name}</h2>
-      <p>{projects.about} </p>
-      <ProjectItem technologies={projects.technologies}/>
+      {projects.map((project)=>(
+        <div key={project.name}>
+          <h2 key={project.name}>{project.name}</h2>
+          <p key={project.about}>{project.about}</p>
+          <ProjectItem technologies={project.technologies} key={project.technologies}/>
+          
+        </div>
+      ))}
     </div>
   );
 }
