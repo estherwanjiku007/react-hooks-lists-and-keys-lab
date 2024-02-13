@@ -5,14 +5,12 @@ import ProjectList from "./ProjectList";*/
 
 function ProjectItem({ technologies}) {
  // const name=projects.name
- console.log(technologies)
+ //console.log(technologies)
   return (      
       <div className="technologies">
-        {technologies.map((technology,index)=>{         
-          <div>
-         <span key={index}>{technology}</span>
-         </div>
-        })}
+      {technologies.map((tech,index)=>(
+        <span key={index}>{tech}</span>
+      ))}
       </div>
     
   );

@@ -8,7 +8,7 @@ import ProjectItem from "./ProjectItem";
   )
 }*/
 function ProjectList({ projects }) {
-  console.log(projects);
+  //console.log(projects);
   return (
     <div id="projects">
       {projects.map((project)=>(
